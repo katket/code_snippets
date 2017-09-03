@@ -1,0 +1,21 @@
+<meta name="keywords" ...  IS NO MORE USED FOR INDEXING PAGES BY GOOGLE
+
+
+SIMPLE TIPS FOR ON-PAGE SEO
+----------------------------------------------------------------------
+Set title tag with keyword (Title is most important for indexing)
+Modifiers in the title like 'buy', 'best', 'guide', 'how'...etc
+Shorter urls(routing)
+Headings H1
+Sub headings H2
+Maximise use of keywords in body (Must in first 100 characters of body)
+Internal links to other pages on our site from body(like wikipedia)
+External links(if possible) to other websites from body
+Speed: Use CDN links for (css,js)
+Use Keywords in links
+compress images Make image filenames as keywords.. use alt attribute with keyword..
+Social Share
+----------------------------------------------------------------------
+
+
+<meta name="description" ... is used but AFTER PAGE GETS INDEXED
