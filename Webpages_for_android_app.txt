@@ -1,0 +1,3 @@
+- Lightweight
+- Don't keep unused resources in pages (css,js files)
+- best view for mobile screen (text on the mobile environment)

@@ -1,0 +1,18 @@
+
+User get the update of latest version.
+	i.e.	suppose app versions are 
+			1.0 	1.1 	2.0
+
+			user with v 1.0 can directly update to 2.0
+
+			***Take Care Of Database Changes,Upgrade Policy***
+
+
+
+User may stay on previous version though update is available.
+			
+			***Take Care Of Web-Services.***
+
+
+Don't forget to increment app version No/Code
+Don't forget to increment database version if there are any changes and provide onUpgrade()
