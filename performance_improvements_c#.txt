@@ -1,0 +1,71 @@
+Below are some performace improvements/efficiency techniques:
+
+C#
+-------
+
+1. Do not use += to concatenate strings; Use StringBuilder; 
+   Strings are immutable in c# i.e. when += used, every time strings are recreated.
+
+2. Dispose c# objects properly:
+   Use Close() or Dispose() methods whenever required.
+   Best way to do this is using(){}
+   
+	e.g using(XyzDbEntities ent = new XyzDbEntities())
+	{
+		//--- Code
+	}
+
+3. Choose loops wisely:
+   Most of the times for loop is faster than foreach
+   
+   More Info...
+   http://www.c-sharpcorner.com/UploadFile/dacca2/5-tips-to-improve-performance-of-C-Sharp-code/
+
+4. Use ternary (?:) operator when single line if required to minimize code
+
+5. Null-Coalesce Operator (??) to minimize code
+   e.g.
+	// General way of checking null
+
+	object a = null;
+	object b = new object();
+	object c;
+
+	if (a != null)
+    		c = a;
+	else
+    		c = b; 
+
+	// New way
+	object a = null;
+	object b = new object();
+	object c = a ?? b;
+
+6. Don’t under estimate Release builds vs. Debug builds
+   While deploying application, build them in "Release" Mode, don't use "Debug"
+   This has a major impact on performace.
+   Debug build keeps traces that helps while we are developing the application which
+   are not necessary in production...
+
+ASP.NET
+--------
+
+1. Create small pages when possible i.e. with less controls on it
+   (You can increase no of pages)
+
+2. Use "Output Caching" when the pages are static or less dynamic
+
+   More Info...
+   https://www.codeproject.com/Articles/49704/ASP-NET-Page-Output-Cache
+
+3. Use "Server.Transfer" *[when possible] instade of "Responce.Redirect"
+   *Server.Transfer don't change the page url so use it on appropriate cases.
+
+4. Use short control name especially under grid/repeater
+   e.g. txtTaxableAmount --> txtTAmt
+   
+
+These are simple looking tips but have a major impact on performace.
+
+	
+
